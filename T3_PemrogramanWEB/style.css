@@ -1,0 +1,78 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.hero {
+  background: linear-gradient(135deg, #000000, #3e276d);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.scrollspy-example {
+  background-color: #000000;
+  color: #333;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #b8b0dd;
+}
+
+#navbar-example2 {
+  background-color: #5f5e66 !important;
+  border-radius: 10px;
+}
+
+#navbar-example2 .nav-link,
+#navbar-example2 .navbar-brand {
+  color: white !important;
+}
+
+#navbar-example2 .nav-link.active {
+  background-color: #777777 !important;
+  color: white !important;
+}
+
+#navbar-example2 .dropdown-menu {
+  background-color: #f3f0ff;
+}
+
+#navbar-example2 .dropdown-item:hover {
+  background-color: #aba9bb;
+}
+
+.pagination .page-link {
+  color: rgb(124, 28, 189);
+  background-color: #ffffff;
+  border: 1px solid #603b91;
+}
+
+.pagination .page-link:hover {
+  background-color: #9f6bbd;
+  border-color: #9f6bbd;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #030303;
+  border-color: #004085;
+  color: rgb(165, 125, 177);
+}
