@@ -1,6 +1,5 @@
 # Tugas-Pemrograman-Web
 
-Tugas 1
 Anggota kelompok
 
 Nasywa Zahrainda Syafana 3012310030
