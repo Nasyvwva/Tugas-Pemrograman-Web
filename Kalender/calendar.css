@@ -1,0 +1,183 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container kalender */
+.calendar-container {
+    background: white;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Header kalender */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+/* Tombol navigasi */
+.nav-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.nav-button:hover {
+    background: #0056b3;
+}
+
+/* Judul bulan */
+.month-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+/* Tabel kalender */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+/* Header dan sel tabel */
+.calendar-table th,
+.calendar-table td {
+    border: 1px solid #333;
+    text-align: center;
+    padding: 10px;
+    width: 14.28%;
+}
+
+/* Header hari */
+.calendar-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    font-size: 14px;
+    color: #495057;
+}
+
+/* Sel tanggal */
+.calendar-table td {
+    height: 50px;
+    vertical-align: middle;
+    font-size: 16px;
+    position: relative;
+    background-color: white;
+}
+
+.calendar-table td:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+/* Tanggal hari ini */
+.today {
+    background-color: #dc3545 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.today:hover {
+    background-color: #c82333 !important;
+}
+
+/* Sel kosong */
+.empty-cell {
+    background-color: #f8f9fa;
+}
+
+.empty-cell:hover {
+    background-color: #f8f9fa !important;
+    cursor: default;
+}
+
+/* Nomor tanggal */
+.date-number {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .calendar-container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .calendar-header {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .calendar-table th,
+    .calendar-table td {
+        padding: 8px 4px;
+        font-size: 12px;
+        height: 40px;
+    }
+    
+    .nav-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .month-title {
+        font-size: 16px;
+        order: -1;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+    
+    .calendar-container {
+        padding: 10px;
+    }
+    
+    .calendar-table th,
+    .calendar-table td {
+        padding: 5px 2px;
+        font-size: 11px;
+        height: 35px;
+    }
+    
+    .nav-button {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+    
+    .month-title {
+        font-size: 14px;
+    }
+}
